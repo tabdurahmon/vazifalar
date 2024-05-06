@@ -128,16 +128,33 @@
 
 // console.log(getOddMin(array));
 
-// n14
-// function getEvenMax(arr) {
-//   let maxEven = -Infinity;
-//   for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] && arr[i] > maxEven) {
-//       maxEven = arr[i];
-//     }
-//   }
-//   return maxEven;
+// N17
+// function getTruthyFalsy(arr) {
+//   const truthyValues = arr.filter((value) => value);
+//   const falsyValues = arr.filter((value) => !value);
+//   return { truthy: truthyValues, falsy: falsyValues };
 // }
 
-// let arr = [1, 4, 7, 2, 9, 6, 3];
-// console.log(getEvenMax(arr));
+// const inputArray = [false, 1, 10, "", null, "abdulaziz", 1.13, 0];
+// const result = getTruthyFalsy(inputArray);
+// console.log("Output:", result);
+
+// N18
+// function getWordLengths(str) {
+//   const words = str.split(" ");
+//   const wordLengths = words.map((word) => word.length);
+//   return wordLengths;
+// }
+
+// const inputString = "Men Abdurahmon Programmerman";
+// const result = getWordLengths(inputString);
+// console.log("Output:", result);
+
+// N19
+// function hasWhiteSpace(str) {
+//   return str.split("").some((char) => char === " ");
+// }
+
+// const inputString = "Men Abdulaziz Programmerman";
+// const result = hasWhiteSpace(inputString);
+// console.log("Output:", result);
